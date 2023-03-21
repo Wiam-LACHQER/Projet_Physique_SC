@@ -1,0 +1,15 @@
+Biens : 
+  - Quantités : Qr et Qc          #2 grps avec deux offres différentes (Qr entre 100 et 200 | Qc entre 50 et 100 pour le 1er grp)
+  - Demandes : Dr et Dc           #entre 150 et 300
+  - Prix plancher: Pr et Pc       #2.82 et 5.38
+  - Prix enchères : Pr' et Pc'    #2.76 et 4.85
+ Revenus :
+  - Marché négocié -> Pour le vendeur i à la date t : Pn=(Qr(i)*Pr(i)(t))+(Qc(i)*Pc(i)(t))
+  - Marché enchères -> Pour le vendeur i à la date t : Pe=(Qr(i)*Pr'(i)(t))+(Qc(i)*Pc'(i)(t))
+ Dépenses :
+  - Marché négocié -> Pour le vendeur i à la date t : Cn=(Dr(i)*Pr(i)(t))++(Dc(i)*Pc(i)(t))
+  - Marché enchères -> Pour le vendeur i à la date t : Ce=(Dr(i)*Pr'(i)(t))+(Dc(i)*Pc'(i)(t))
+ Probabilité :
+  - Probabilité pour un vendeur i d’aller sur le marché d’enchères : R(i)(t)=[Pe(i)(t)-Pn(i)(t)]/[Pe(i)(t)+Pn(i)(t)]  #entre -1 et 1 (cad 0% et 100%)
+  - Probabilité pour un acheteur d’aller sur le marché d’enchères : R(i)(t)=[Ce(i)(t)-Cn(i)(t)]/[Ce(i)(t)+Cn(i)(t)]
+  
